@@ -21,15 +21,15 @@ import mysql.connector
 
 # Constants
 BASE_URL = "https://almeriaciudad.es"
-CITY = 'Almería'
+CITY = 'Almeria'
 DATE = datetime.today().strftime('%Y-%m-%d')
 
 # Connect to the database
 mydb = mysql.connector.connect(
-    host="localhost",         # Cambia esto por tu host
-    user="root",      # Cambia esto por tu usuario
-    password="password",  # Cambia esto por tu contraseña
-    database="justicio"  # Cambia esto por tu base de datos donde está la tabla “normativa”
+    host="localhost",
+    user="root",
+    password="password",
+    database="justicio"
 )
 mycursor = mydb.cursor()
 
